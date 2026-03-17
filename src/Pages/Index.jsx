@@ -84,97 +84,138 @@ function Index() {
                     slidesPerView={1}
                     spaceBetween={0}
                     loop={true}
-                    autoplay={{
-                        delay: 3000,
-                    }}
+                    autoplay={{ delay: 3500 }}
                     speed={1500}
-                    className='hero-swiper w-full h-full'
+                    className="hero-swiper w-full h-full"
                 >
+
+                    {/* SLIDE 1 */}
+
                     <SwiperSlide>
                         <div className="hero-slide hero-slide1 w-full h-full flex items-center px-[12%]">
+
                             <div className="hero-content text-white lg:w-[60%]">
-                                <span className='font-bricolage text-xs sm:text-sm lg:text-md uppercase tracking-widest bg-[#e8021f] px-2 py-1 rounded-sm'>- Premium</span>
-                                <h1 className='font-bricolage text-3xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-medium hero-title my-3'>
-                                    Sinta a Velocidade, Viva o Luxo
+
+                                <span className="font-bricolage text-xs sm:text-sm uppercase tracking-widest bg-[#43d6d2] text-black px-2 py-1 rounded-sm">
+                                    Assistência Técnica
+                                </span>
+
+                                <h1 className="font-bricolage text-3xl sm:text-5xl md:text-6xl xl:text-7xl font-medium hero-title my-3">
+                                    Manutenção de Celulares
                                 </h1>
-                                <p className='my-2 text-lg lg:text-2xl font-bricolage hero-subtitle text-gray-300'>
-                                    Você pode alugar qualquer um dos nossos carros de luxo.
+
+                                <p className="my-2 text-lg lg:text-2xl font-bricolage hero-subtitle text-gray-300">
+                                    Conserto rápido e profissional para seu smartphone
                                 </p>
+
                                 <p className="my-5 xl:my-7 lg:w-[60%] hero-pere text-gray-300">
-                                    A ridelux torna o aluguel de carros simples, rápido e acessível. Escolha entre uma ampla variedade de veículos para a sua viagem.
+                                    Realizamos manutenção completa em celulares, diagnóstico rápido
+                                    e reparos com qualidade para deixar seu aparelho funcionando
+                                    como novo.
                                 </p>
+
                                 <div className="hero-btns flex flex-wrap gap-4 mt-5 lg:mt-8">
-                                    <Link to='/About'>
-                                        <button className="default-btn bg-[#e8021f] transition-all hover:bg-white hover:text-black py-3 px-5 lg:px-7 lg:py-5 font-bricolage rounded-full transform hover:-translate-y-1 cursor-pointer">
-                                            Ver mais &nbsp;
-                                            <i className="bi bi-arrow-up-right"></i>
+
+                                    <a
+                                        href="https://wa.me/5591985072644"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+
+                                        <button className="default-btn bg-[#43d6d2] text-black transition-all hover:bg-white hover:text-black py-3 px-5 lg:px-7 lg:py-5 font-bricolage rounded-full">
+                                            Pedir orçamento
                                         </button>
-                                    </Link>
-                                    <Link to='/Cars' className='cursor-pointer'>
-                                        <button className="default-btn border cursor-pointer py-3 px-5 lg:px-7 lg:py-5 font-bricolage rounded-full transition-all hover:bg-[#e8021f] hover:border-transparent hover:-translate-y-1">
-                                            Alugar agora <i className="bi bi-arrow-up-right"></i>
-                                        </button>
-                                    </Link>
+
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
                     </SwiperSlide>
+
+
+                    {/* SLIDE 2 */}
 
                     <SwiperSlide>
                         <div className="hero-slide hero-slide2 w-full h-full flex items-center px-[12%]">
+
                             <div className="hero-content text-white lg:w-[60%]">
-                                <span className='font-bricolage text-xs sm:text-sm lg:text-md uppercase tracking-widest bg-[#e8021f] px-2 py-1 rounded-sm'>- Premium</span>
-                                <h1 className='font-bricolage text-3xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-medium hero-title my-3'>
-                                    Dirija do Seu Jeito, a Qualquer Hora e em Qualquer Lugar
+
+                                <span className="font-bricolage text-xs sm:text-sm uppercase tracking-widest bg-[#43d6d2] text-black px-2 py-1 rounded-sm">
+                                    Serviços
+                                </span>
+
+                                <h1 className="font-bricolage text-3xl sm:text-5xl md:text-6xl xl:text-7xl font-medium hero-title my-3">
+                                    Formatação de Computadores
                                 </h1>
-                                <p className='my-2 text-base sm:text-lg lg:text-2xl font-bricolage hero-subtitle text-gray-300'>
-                                    Você pode alugar qualquer um dos nossos carros de luxo.
+
+                                <p className="my-2 text-lg lg:text-2xl font-bricolage hero-subtitle text-gray-300">
+                                    Seu PC rápido e seguro novamente
                                 </p>
+
                                 <p className="my-5 xl:my-7 lg:w-[60%] hero-pere text-gray-300">
-                                    Experimente o aluguel premium de carros com conforto, estilo e acessibilidade — perfeito para viagens, negócios ou fins de semana de luxo.
+                                    Remoção de vírus, instalação de sistema e otimização
+                                    completa para melhorar o desempenho do seu computador.
                                 </p>
+
                                 <div className="hero-btns flex flex-wrap gap-4 mt-5 lg:mt-8">
-                                    <Link to='/About'>
-                                        <button className="default-btn bg-[#e8021f] transition-all hover:bg-white hover:text-black py-3 px-5 lg:px-7 lg:py-5 font-bricolage rounded-full transform hover:-translate-y-1 cursor-pointer">
-                                            Ver mais &nbsp;
-                                            <i className="bi bi-arrow-up-right"></i>
+
+                                    <a
+                                        href="https://wa.me/5591985072644"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+
+                                        <button className="default-btn bg-[#43d6d2] text-black transition-all hover:bg-white hover:text-black py-3 px-5 lg:px-7 lg:py-5 font-bricolage rounded-full">
+                                            Falar com técnico
                                         </button>
-                                    </Link>
-                                    <Link to='/Cars' className='cursor-pointer'>
-                                        <button className="default-btn border cursor-pointer py-3 px-5 lg:px-7 lg:py-5 font-bricolage rounded-full transition-all hover:bg-[#e8021f] hover:border-transparent hover:-translate-y-1">
-                                            Alugar agora <i className="bi bi-arrow-up-right"></i>
-                                        </button>
-                                    </Link>
+
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
                     </SwiperSlide>
 
+
+                    {/* SLIDE 3 */}
+
                     <SwiperSlide>
                         <div className="hero-slide hero-slide3 w-full h-full flex items-center px-[12%]">
+
                             <div className="hero-content text-white lg:w-[60%]">
-                                <span className='font-bricolage text-xs sm:text-sm lg:text-md uppercase tracking-widest bg-[#e8021f] px-2 py-1 rounded-sm'>- Premium</span>
-                                <h1 className='font-bricolage text-3xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-medium hero-title my-3'>
-                                    Elegância sobre Rodas, Onde Quer que Vá
+
+                                <span className="font-bricolage text-xs sm:text-sm uppercase tracking-widest bg-[#43d6d2] text-black px-2 py-1 rounded-sm">
+                                    Mateus Soft
+                                </span>
+
+                                <h1 className="font-bricolage text-3xl sm:text-5xl md:text-6xl xl:text-7xl font-medium hero-title my-3">
+                                    Acessórios e Xerox
                                 </h1>
-                                <p className='my-2 text-base sm:text-lg lg:text-2xl font-bricolage hero-subtitle text-gray-300'>
-                                    Você pode alugar qualquer um dos nossos carros de luxo.
+
+                                <p className="my-2 text-lg lg:text-2xl font-bricolage hero-subtitle text-gray-300">
+                                    Capinhas, cabos, carregadores e serviços de impressão
                                 </p>
+
                                 <p className="my-5 xl:my-7 lg:w-[60%] hero-pere text-gray-300">
-                                    Experimente o aluguel premium de carros com conforto, estilo e acessibilidade — perfeito para viagens, negócios ou fins de semana de luxo.
+                                    Também trabalhamos com venda de acessórios para celular
+                                    e serviços de xerox e impressão para facilitar seu dia a dia.
                                 </p>
+
                                 <div className="hero-btns flex flex-wrap gap-4 mt-5 lg:mt-8">
-                                    <Link to='/About'>
-                                        <button className="default-btn bg-[#e8021f] transition-all hover:bg-white hover:text-black py-3 px-5 lg:px-7 lg:py-5 font-bricolage rounded-full transform hover:-translate-y-1 cursor-pointer">
-                                            Ver mais &nbsp;
-                                            <i className="bi bi-arrow-up-right"></i>
+
+                                    <a
+                                        href="https://wa.me/5591985072644"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+
+                                        <button className="default-btn bg-[#43d6d2] text-black transition-all hover:bg-white hover:text-black py-3 px-5 lg:px-7 lg:py-5 font-bricolage rounded-full">
+                                            Falar no WhatsApp
                                         </button>
-                                    </Link>
-                                    <Link to='/Cars' className='cursor-pointer'>
-                                        <button className="default-btn border cursor-pointer py-3 px-5 lg:px-7 lg:py-5 font-bricolage rounded-full transition-all hover:bg-[#e8021f] hover:border-transparent hover:-translate-y-1">
-                                            Alugar agora <i className="bi bi-arrow-up-right"></i>
-                                        </button>
-                                    </Link>
+
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -183,178 +224,201 @@ function Index() {
                 </Swiper>
             </div>
 
+
+
             {/* About */}
             <div className="about text-white lg:px-[10%] px-[8%] py-[50px] lg:py-[90px]">
                 <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
                     <div className="relative w-auto sm:h-[450px] lg:h-[600px]">
                         <img
                             src={about}
-                            alt="Sobre nós"
+                            alt="Assistência técnica Mateus Soft"
                             className="rounded-3xl w-full h-full object-contain md:object-cover"
                         />
-                        <div className="curv bg-[#111111]">
+
+                        <div className="curv bg-[#081f38]">
                             <div className="about-item-curv section-item-curv">
-                                <i className="ri-play-line text-xl"></i>
+                                <i className="ri-tools-line text-xl"></i>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <p className="uppercase text-xs md:text-sm tracking-widest text-[#e8021f] mb-2">- Rentax</p>
+
+                        <p className="uppercase text-xs md:text-sm tracking-widest text-[#43d6d2] mb-2">
+                            - Mateus Soft
+                        </p>
+
                         <h2 className="text-3xl md:text-5xl font-bold mb-3 font-bricolage">
-                            Somos Mais do que <br />
-                            <span className="text-[#e8021f] font-bricolage">Uma Empresa de Aluguel de Carros</span>
+                            Assistência Técnica em <br />
+                            <span className="text-[#43d6d2] font-bricolage">
+                                Celulares e Computadores
+                            </span>
                         </h2>
+
                         <p className="text-gray-400 leading-relaxed my-6 text-sm lg:text-base">
-                            Na Rentax, oferecemos muito mais do que um simples serviço de locação.
-                            Combinamos qualidade, conforto e segurança para que cada viagem seja uma experiência única.
-                            Nosso compromisso é garantir praticidade, luxo e atendimento de excelência em todos os detalhes.
+                            A Mateus Soft oferece serviços especializados em manutenção de celulares,
+                            formatação de computadores e venda de acessórios. Trabalhamos com diagnóstico
+                            rápido, atendimento de qualidade e soluções confiáveis para manter seus
+                            dispositivos funcionando perfeitamente.
                         </p>
 
                         <div className="space-y-4 mb-10">
+
                             <div className="flex items-center gap-4">
-                                <div className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center text-[#e8021f]">
+                                <div className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center text-[#43d6d2]">
                                     <i className="ri-check-double-line"></i>
                                 </div>
-                                <span className="text-white">Carros Esportivos e de Luxo</span>
+                                <span className="text-white">Manutenção de Celulares</span>
                             </div>
+
                             <div className="flex items-center gap-4">
-                                <div className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center text-[#e8021f]">
+                                <div className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center text-[#43d6d2]">
                                     <i className="ri-check-double-line"></i>
                                 </div>
-                                <span className="text-white">Carros Econômicos</span>
+                                <span className="text-white">Formatação e Otimização de Computadores</span>
                             </div>
+
+                            <div className="flex items-center gap-4">
+                                <div className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center text-[#43d6d2]">
+                                    <i className="ri-check-double-line"></i>
+                                </div>
+                                <span className="text-white">Venda de Acessórios e Serviço de Xerox</span>
+                            </div>
+
                         </div>
 
-                        <button className="bg-[#e8021f] text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 hover:bg-black transition-colors duration-300">
-                            Saiba mais <i className="ri-arrow-right-line"></i>
-                        </button>
+                        <a
+                            href="https://wa.me/5591985072644"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <button className="bg-[#43d6d2] text-black px-8 py-4 rounded-full font-medium flex items-center gap-2 hover:bg-white transition-colors duration-300">
+                                Falar no WhatsApp <i className="ri-whatsapp-line"></i>
+                            </button>
+
+                        </a>
+
                     </div>
                 </div>
             </div>
+
 
 
             {/* Banner */}
             <div className="banner lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]">
                 <div className="banner-content text-center">
-                    <p className="uppercase text-sm tracking-[5px] text-white mb-2">- Alugue Agora</p>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-3 text-white font-bricolage">Reserve seu Carro</h2>
 
-                    <div className="bg-[#1f1f1f] text-white w-[90%] max-w-[1200px] mx-auto mt-[70px] rounded-3xl px-6 py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 shadow-lg z-50">
-                        {/* Tipo de carro */}
-                        <div className="relative w-full lg:w-auto px-4 py-3 group border-r border-gray-600">
-                            <button className="flex items-center gap-2 w-full justify-between text-gray-400">
-                                {carType || "Escolha o Tipo de Carro"} <i className="ri-arrow-down-s-line text-[#e8021f]"></i>
-                            </button>
-                            <div className="absolute top-[110%] left-0 w-48 bg-[#1f1f1f] border border-[#e8021f] rounded-sm shadow-md opacity-0 scale-95 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:visible transition-all duration-300 ease-out z-50">
-                                <ul className="divide-y divide-gray-700">
-                                    {["Carros Esportivos", "Conversíveis", "Carros de Luxo", "Carros Compactos"].map((item) => (
-                                        <li key={item} onClick={() => setCarType(item)} className="px-4 py-2 hover:bg-[#e8021f] transition cursor-pointer">{item}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
+                    <p className="uppercase text-sm tracking-[5px] text-white mb-2">
+                        - Atendimento Rápido
+                    </p>
 
-                        {/* Local de Retirada */}
-                        <div className="relative w-full lg:w-auto px-4 py-3 group border-r border-gray-600">
-                            <button className="flex items-center gap-2 w-full justify-between text-gray-400">
-                                {pickUpLocation || "Local de Retirada"} <i className="ri-arrow-down-s-line text-[#e8021f]"></i>
-                            </button>
-                            <div className="absolute top-[110%] left-0 w-48 bg-[#1f1f1f] border border-[#e8021f] rounded-sm shadow-md opacity-0 scale-95 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:visible transition-all duration-300 ease-out z-50">
-                                <ul className="divide-y divide-gray-700">
-                                    {["Belém", "Ananindeua", "Marabá", "Santarém"].map((item) => (
-                                        <li key={item} onClick={() => setPickUpLocation(item)} className="px-4 py-2 hover:bg-[#e8021f] transition cursor-pointer">{item}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-3 text-white font-bricolage">
+                        Conserto de Celulares e Computadores
+                    </h2>
 
-                        {/* Data de Retirada */}
-                        <div className="relative w-full lg:w-auto px-4 py-3 flex items-center border-r border-gray-600 cursor-pointer" onClick={openCalendar}>
-                            <DatePicker selected={pickUpDate} onChange={(date) => setPickUpDate(date)} dateFormat="dd MMM yyyy" placeholderText="Data de Retirada" ref={datePickerRef} className={`bg-[#1f1f1f] text-white outline-none cursor-pointer w-full ${!pickUpDate ? 'text-gray-400' : ''}`} calendarClassName="dark-datepicker" popperPlacement="bottom-start" />
-                            <i className="ri-calendar-line text-[#e8021f] pointer-events-none"></i>
-                        </div>
+                    <p className="text-gray-400 max-w-2xl mx-auto mt-4">
+                        A Mateus Soft oferece manutenção de celulares, formatação de computadores,
+                        venda de acessórios e serviços de impressão. Atendimento rápido e diagnóstico
+                        confiável para seu aparelho.
+                    </p>
 
-                        {/* Local de Devolução */}
-                        <div className="relative w-full lg:w-auto px-4 py-3 group border-r border-gray-600">
-                            <button className="flex items-center gap-2 w-full justify-between text-gray-400">
-                                {dropOffLocation || "Local de Devolução"} <i className="ri-arrow-down-s-line text-[#e8021f]"></i>
-                            </button>
-                            <div className="absolute top-[110%] left-0 w-48 bg-[#1f1f1f] border border-[#e8021f] rounded-sm shadow-md opacity-0 scale-95 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:visible transition-all duration-300 ease-out z-50">
-                                <ul className="divide-y divide-gray-700">
-                                    {["Belém", "Ananindeua", "Marabá", "Santarém"].map((item) => (
-                                        <li key={item} onClick={() => setDropOffLocation(item)} className="px-4 py-2 hover:bg-[#e8021f] transition cursor-pointer">{item}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* Data de Devolução */}
-                        <div className="relative w-full lg:w-auto px-4 py-3 flex items-center cursor-pointer lg:border-0 border-r border-gray-600" onClick={openreturnCalendar}>
-                            <DatePicker selected={returnDate} onChange={(date) => setReturnDate(date)} dateFormat="dd MMM yyyy" placeholderText="Data de Devolução" ref={returnPickerRef} className={`bg-[#1f1f1f] text-white outline-none cursor-pointer w-full ${!returnDate ? 'text-gray-400' : ''}`} calendarClassName="dark-datepicker" popperPlacement="bottom-start" />
-                            <i className="ri-calendar-line text-[#e8021f] pointer-events-none"></i>
-                        </div>
-                    </div>
-
-                    {/* Botão WhatsApp */}
-                    <button onClick={handleWhatsApp} className="mt-8 bg-[#e8021f] text-white px-8 py-4 rounded-full font-medium hover:bg-black transition-colors duration-300">
-                        Reservar pelo WhatsApp <i className="ri-whatsapp-line text-xl"></i>
+                    <button
+                        onClick={handleWhatsApp}
+                        className="mt-8 bg-[#43d6d2] text-black px-8 py-4 rounded-full font-medium hover:bg-white transition-colors duration-300"
+                    >
+                        Solicitar Orçamento <i className="ri-whatsapp-line text-xl"></i>
                     </button>
+
                 </div>
             </div>
 
 
+            {/* Serviços */}
             <div className='car-categories lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]'>
+
                 <div className="car-categories-content text-center mb-10 lg:mb-14">
-                    <p className="uppercase text-sm tracking-[5px] mb-2 text-[#e8021f]">- Categorias de Carros</p>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-3 text-white font-bricolage ">
-                        Escolha o Carro Ideal para Sua Viagem
+
+                    <p className="uppercase text-sm tracking-[5px] mb-2 text-[#43d6d2]">
+                        - Nossos Serviços
+                    </p>
+
+                    <h2 className="text-4xl md:text-5xl font-bold mb-3 text-white font-bricolage">
+                        Soluções para Seus Dispositivos
                     </h2>
+
                 </div>
+
+
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
-                    <div className='bg-[#1e1e23] h-auto md:h-[400px] car-ctg-item relative flex justify-between items-start flex-col overflow-hidden w-full'>
-                        <div className="car-ctg-info p-4">
-                            <h4 className='text-white text-3xl xxl:text-4xl font-semibold font-bricolage pb-1'>Carros de Luxo</h4>
-                            <span className='text-gray-400 text-lg xxl:text-xl font-bricolage'>Mais de 40 carros disponíveis</span>
-                        </div>
 
-                        <div className="car-ctg w-full h-full">
-                            <img src={carctg1} alt="imagem-carro-categoria" className='w-[100%] h-full object-cover translate-x-10 translate-y-10' />
-                        </div>
+
+                    {/* Serviço 1 */}
+                    <div className='bg-[#1e1e23] h-auto md:h-[350px] car-ctg-item relative flex justify-center items-center flex-col text-center p-6'>
+
+                        <i className="ri-smartphone-line text-6xl text-[#43d6d2] mb-6"></i>
+
+                        <h4 className='text-white text-2xl font-semibold font-bricolage pb-2'>
+                            Manutenção de Celulares
+                        </h4>
+
+                        <span className='text-gray-400'>
+                            Troca de tela, bateria, conector e reparos em geral.
+                        </span>
+
                     </div>
 
-                    <div className='bg-[#1e1e23] h-auto md:h-[400px] car-ctg-item relative flex justify-between items-start flex-col overflow-hidden w-full'>
-                        <div className="car-ctg-info p-4">
-                            <h4 className='text-white text-3xl xxl:text-4xl font-semibold font-bricolage pb-1'>SUVs</h4>
-                            <span className='text-gray-400 text-lg xxl:text-xl font-bricolage'>Mais de 70 carros disponíveis</span>
-                        </div>
 
-                        <div className="car-ctg w-full h-full">
-                            <img src={carctg2} alt="imagem-carro-categoria" className='w-[100%] h-full object-cover translate-x-10 translate-y-10' />
-                        </div>
+                    {/* Serviço 2 */}
+                    <div className='bg-[#1e1e23] h-auto md:h-[350px] car-ctg-item relative flex justify-center items-center flex-col text-center p-6'>
+
+                        <i className="ri-computer-line text-6xl text-[#43d6d2] mb-6"></i>
+
+                        <h4 className='text-white text-2xl font-semibold font-bricolage pb-2'>
+                            Formatação de Computadores
+                        </h4>
+
+                        <span className='text-gray-400'>
+                            Instalação de sistema, limpeza e otimização do PC.
+                        </span>
+
                     </div>
 
-                    <div className='bg-[#1e1e23] h-auto md:h-[400px] car-ctg-item relative flex justify-between items-start flex-col overflow-hidden w-full'>
-                        <div className="car-ctg-info p-4">
-                            <h4 className='text-white text-3xl xxl:text-4xl font-semibold font-bricolage pb-1'>Carros Econômicos</h4>
-                            <span className='text-gray-400 text-lg xxl:text-xl font-bricolage'>Mais de 100 carros disponíveis</span>
-                        </div>
 
-                        <div className="car-ctg w-full h-full">
-                            <img src={carctg3} alt="imagem-carro-categoria" className='w-[100%] h-full object-cover translate-x-10 translate-y-10' />
-                        </div>
+                    {/* Serviço 3 */}
+                    <div className='bg-[#1e1e23] h-auto md:h-[350px] car-ctg-item relative flex justify-center items-center flex-col text-center p-6'>
+
+                        <i className="ri-headphone-line text-6xl text-[#43d6d2] mb-6"></i>
+
+                        <h4 className='text-white text-2xl font-semibold font-bricolage pb-2'>
+                            Venda de Acessórios
+                        </h4>
+
+                        <span className='text-gray-400'>
+                            Capas, carregadores, cabos, fones e outros acessórios.
+                        </span>
+
                     </div>
 
-                    <div className='bg-[#1e1e23] h-auto md:h-[400px] car-ctg-item relative flex justify-between items-start flex-col overflow-hidden w-full'>
-                        <div className="car-ctg-info p-4">
-                            <h4 className='text-white text-3xl xxl:text-4xl font-semibold font-bricolage pb-1'>Vans & MPVs</h4>
-                            <span className='text-gray-400 text-lg xxl:text-xl font-bricolage'>Mais de 34 carros disponíveis</span>
-                        </div>
 
-                        <div className="car-ctg w-full h-full">
-                            <img src={carctg4} alt="imagem-carro-categoria" className='w-[100%] h-full object-cover translate-x-10 translate-y-10' />
-                        </div>
+                    {/* Serviço 4 */}
+                    <div className='bg-[#1e1e23] h-auto md:h-[350px] car-ctg-item relative flex justify-center items-center flex-col text-center p-6'>
+
+                        <i className="ri-printer-line text-6xl text-[#43d6d2] mb-6"></i>
+
+                        <h4 className='text-white text-2xl font-semibold font-bricolage pb-2'>
+                            Xerox e Impressões
+                        </h4>
+
+                        <span className='text-gray-400'>
+                            Impressão de documentos e cópias rápidas.
+                        </span>
+
                     </div>
+
+
                 </div>
             </div>
 
@@ -459,58 +523,158 @@ function Index() {
                 </Swiper>
             </div>
 
-            {/* Service */}
+            {/* Serviços Extras */}
             <div className="our-service lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]">
+
                 <div className="our-service-content mb-20 text-center text-white">
-                    <p className="uppercase text-sm tracking-[5px] text-[#e8021f] mb-2">- Nossos Serviços</p>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-3 font-bricolage ">
+
+                    <p className="uppercase text-sm tracking-[5px] text-[#43d6d2] mb-2">
+                        - Serviços Extras
+                    </p>
+
+                    <h2 className="text-4xl md:text-5xl font-bold mb-3 font-bricolage">
                         Outros Serviços
                     </h2>
+
+                    <p className="text-gray-400 max-w-2xl mx-auto">
+                        Além da manutenção de celulares e computadores, também oferecemos
+                        diversos serviços digitais para facilitar o seu dia a dia.
+                    </p>
+
                 </div>
+
 
                 <div className="our-service-wrapper">
+
                     <div className='grid w-full gap-12 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3'>
-                        {/* Aluguel de Carro Diário */}
-                        <div className="service-item relative text-white rounded-[30px] bg-[#222222] w-full">
-                            <h5 className='font-semibold text-3xl mb-3 font-bricolage'>Aluguel Diário de Carros</h5>
+
+
+                        {/* Cadastro Gov */}
+                        <div className="service-item relative text-white rounded-[30px] bg-[#222222] w-full p-8">
+
+                            <h5 className='font-semibold text-3xl mb-3 font-bricolage'>
+                                Cadastro Gov.br
+                            </h5>
+
                             <p className='text-[#999] text-lg'>
-                                Alugue um carro por dia com total conforto e praticidade. Ideal para viagens curtas e passeios rápidos.
+                                Criamos ou recuperamos sua conta Gov.br para acesso a serviços do governo.
                             </p>
+
                             <div className="curv">
                                 <div className="service-item-curv section-item-curv">
-                                    1.
+                                    1
                                 </div>
                             </div>
+
                         </div>
 
-                        {/* Aluguel de Carro Mensal */}
-                        <div className="service-item relative text-white rounded-[30px] bg-[#222222] w-full">
-                            <h5 className='font-semibold text-3xl mb-3 font-bricolage'>Aluguel Mensal de Carros</h5>
+
+                        {/* Recuperação de Conta */}
+                        <div className="service-item relative text-white rounded-[30px] bg-[#222222] w-full p-8">
+
+                            <h5 className='font-semibold text-3xl mb-3 font-bricolage'>
+                                Recuperação de Contas
+                            </h5>
+
                             <p className='text-[#999] text-lg'>
-                                Aproveite tarifas especiais e flexibilidade ao alugar um carro por um mês inteiro. Perfeito para estadias prolongadas.
+                                Recuperamos contas de Google, Facebook, Instagram e outros serviços.
                             </p>
+
                             <div className="curv">
                                 <div className="service-item-curv section-item-curv">
-                                    2.
+                                    2
                                 </div>
                             </div>
+
                         </div>
 
-                        {/* Aluguel de Carro Anual */}
-                        <div className="service-item relative text-white rounded-[30px] bg-[#222222] w-full">
-                            <h5 className='font-semibold text-3xl mb-3 font-bricolage'>Aluguel Anual de Carros</h5>
+
+                        {/* Remoção de Vírus */}
+                        <div className="service-item relative text-white rounded-[30px] bg-[#222222] w-full p-8">
+
+                            <h5 className='font-semibold text-3xl mb-3 font-bricolage'>
+                                Remoção de Vírus
+                            </h5>
+
                             <p className='text-[#999] text-lg'>
-                                Contratos anuais para quem precisa de um carro durante todo o ano. Ideal para empresas e clientes frequentes.
+                                Limpamos vírus, aplicativos maliciosos e melhoramos o desempenho do aparelho.
                             </p>
+
                             <div className="curv">
                                 <div className="service-item-curv section-item-curv">
-                                    3.
+                                    3
                                 </div>
                             </div>
+
                         </div>
+
+
+                        {/* Transferência de Dados */}
+                        <div className="service-item relative text-white rounded-[30px] bg-[#222222] w-full p-8">
+
+                            <h5 className='font-semibold text-3xl mb-3 font-bricolage'>
+                                Transferência de Dados
+                            </h5>
+
+                            <p className='text-[#999] text-lg'>
+                                Transferimos fotos, vídeos e contatos do celular antigo para o novo.
+                            </p>
+
+                            <div className="curv">
+                                <div className="service-item-curv section-item-curv">
+                                    4
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        {/* Instalação de Aplicativos */}
+                        <div className="service-item relative text-white rounded-[30px] bg-[#222222] w-full p-8">
+
+                            <h5 className='font-semibold text-3xl mb-3 font-bricolage'>
+                                Instalação de Aplicativos
+                            </h5>
+
+                            <p className='text-[#999] text-lg'>
+                                Instalamos e configuramos aplicativos essenciais no seu celular.
+                            </p>
+
+                            <div className="curv">
+                                <div className="service-item-curv section-item-curv">
+                                    5
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        {/* Configuração de Celular */}
+                        <div className="service-item relative text-white rounded-[30px] bg-[#222222] w-full p-8">
+
+                            <h5 className='font-semibold text-3xl mb-3 font-bricolage'>
+                                Configuração de Celular
+                            </h5>
+
+                            <p className='text-[#999] text-lg'>
+                                Configuramos celular novo com contas, aplicativos e ajustes.
+                            </p>
+
+                            <div className="curv">
+                                <div className="service-item-curv section-item-curv">
+                                    6
+                                </div>
+                            </div>
+
+                        </div>
+
+
                     </div>
+
                 </div>
+
             </div>
+
 
 
             {/* car */}
@@ -711,35 +875,35 @@ function Index() {
 
             {/* Our Blog */}
             <div className="our-blog lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]">
-    <div className="our-blog-content mb-20 text-center text-white">
-        <p className="uppercase text-sm tracking-[5px] text-[#e8021f] mb-2">- Nosso Blog</p>
-        <h2 className="text-4xl md:text-5xl font-bold mb-3 text-white font-bricolage ">
-            Últimas <span className="text-[#e8021f] font-bricolage">Notícias</span>
-        </h2>
-    </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-        {blogdata.slice(0, 3).map((blog) => (
-            <div key={blog.id} className="blog-item bg-[#1e1f22] group">
-                <div className="blog-image overflow-hidden">
-                    <img
-                        src={blog.image}
-                        alt={blog.title}
-                        className="group-hover:scale-110 transition-all duration-300 w-full h-[250px] object-cover"
-                    />
+                <div className="our-blog-content mb-20 text-center text-white">
+                    <p className="uppercase text-sm tracking-[5px] text-[#e8021f] mb-2">- Nosso Blog</p>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-3 text-white font-bricolage ">
+                        Últimas <span className="text-[#e8021f] font-bricolage">Notícias</span>
+                    </h2>
                 </div>
-                <div className="blog-content p-5 py-8">
-                    <div className="date bg-red-600 w-fit px-4 py-0.5 text-md text-white font-bricolage rounded-md mb-3">
-                        {blog.date}
-                    </div>
-                    <h4 className="text-lg lg:text-2xl font-bricolage text-white font-semibold uppercase">
-                        {blog.name}
-                    </h4>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+                    {blogdata.slice(0, 3).map((blog) => (
+                        <div key={blog.id} className="blog-item bg-[#1e1f22] group">
+                            <div className="blog-image overflow-hidden">
+                                <img
+                                    src={blog.image}
+                                    alt={blog.title}
+                                    className="group-hover:scale-110 transition-all duration-300 w-full h-[250px] object-cover"
+                                />
+                            </div>
+                            <div className="blog-content p-5 py-8">
+                                <div className="date bg-red-600 w-fit px-4 py-0.5 text-md text-white font-bricolage rounded-md mb-3">
+                                    {blog.date}
+                                </div>
+                                <h4 className="text-lg lg:text-2xl font-bricolage text-white font-semibold uppercase">
+                                    {blog.name}
+                                </h4>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
-        ))}
-    </div>
-</div>
 
         </>
     )

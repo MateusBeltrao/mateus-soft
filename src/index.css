@@ -9,13 +9,13 @@
 }
 
 :root {
-  --prim-color: #e8021f;
+  --prim-color: #43d6d2;
 
-  --section-dark-bg: #1b1b1b;
-  --section-light-bg: #222222;
-  --text-light: #999;
-  --white-color: #fff;
-  --black-color: #000;
+  --section-dark-bg: #0b2a4a;
+  --section-light-bg: #102f55;
+  --text-light: #9ca3af;
+  --white-color: #ffffff;
+  --black-color: #000000;
 
   --Bricolage-font: "Bricolage Grotesque", sans-serif;
   --Roboto-font: "Roboto", sans-serif;
@@ -27,9 +27,9 @@
 
 html,
 body {
-  background-color: #111111;
-  font-family: var(--Roboto-font);
+  background-color: #0b2a4a;
 }
+
 
 .font-bricolage {
   font-family: var(--Bricolage-font);
