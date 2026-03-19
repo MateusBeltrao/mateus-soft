@@ -1,62 +1,44 @@
 [
     {
         "id": "1",
-        "name": "Luxora E-Class",
-        "type": "Luxury",
-        "image": "/Image/cars-slide-01.jpg",
-        "seats": "4 Seat",
-        "transmission": "Automatic",
-        "speed": "350 Km/h",
-        "price": "110"
+        "name": "Fone de Ouvido com Fio",
+        "image": "/Image/fone-fio.webp",
+        "price": "5 a 20",
+        "category": "Áudio"
     },
     {
         "id": "2",
-        "name": "Z4 Roadster",
-        "type": "Convertibles",
-        "image": "/Image/cars-slide-02.jpg",
-        "seats": "4 Seat",
-        "transmission": "Automatic",
-        "speed": "250 Km/h",
-        "price": "210"
+        "name": "Fone Bluetooth",
+        "image": "/Image/fone-bluetooth.webp",
+        "price": "35 a 40",
+        "category": "Áudio"
     },
     {
         "id": "3",
-        "name": "Cayenne Turbo",
-        "type": "SUVs",
-        "image": "/Image/cars-slide-03.jpg",
-        "seats": "5 Seat",
-        "transmission": "Automatic",
-        "speed": "250 Km/h",
-        "price": "150"
+        "name": "Carregador",
+        "image": "/Image/blog-image-02.webp",
+        "price": "5 a 50",
+        "category": "Energia"
     },
     {
         "id": "4",
-        "name": "Martin Vantage",
-        "type": "Sports Cars",
-        "image": "/Image/cars-slide-04.jpg",
-        "seats": "2 Seat",
-        "transmission": "Automatic",
-        "speed": "314 Km/h",
-        "price": "910"
+        "name": "Capinha Térmica",
+        "image": "/Image/capinha.webp",
+        "price": "35 a 40",
+        "category": "Proteção"
     },
     {
         "id": "5",
-        "name": "LS 500",
-        "type": "Luxury Sedans",
-        "image": "/Image/cars-slide-05.jpg",
-        "seats": "7 Seat",
-        "transmission": "Automatic",
-        "speed": "350 Km/h",
-        "price": "250"
+        "name": "Caixinha de Som",
+        "image": "/Image/caixa-som.webp",
+        "price": "20 a 70",
+        "category": "Som"
     },
     {
         "id": "6",
-        "name": "Quattroporte",
-        "type": "Luxury Sedans",
-        "image": "/Image/cars-slide-06.jpg",
-        "seats": "5 Seat",
-        "transmission": "Automatic",
-        "speed": "250 Km/h",
-        "price": "620"
+        "name": "Celulares",
+        "image": "/Image/celular.webp",
+        "price": "a partir de 250",
+        "category": "Aparelhos"
     }
 ]

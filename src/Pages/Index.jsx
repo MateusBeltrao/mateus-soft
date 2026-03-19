@@ -9,6 +9,7 @@ import about from '../assets/about.jpg';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
+
 import carctg1 from '../assets/car-ctg-01.png'
 import carctg2 from '../assets/car-ctg-02.png'
 import carctg3 from '../assets/car-ctg-03.png'
@@ -20,12 +21,12 @@ import tst3 from '../assets/test-3.jpg';
 import tst4 from '../assets/test-4.jpg';
 
 import blogdata from '../Blog.json'
-import brand1 from '../assets/brand-01.webp'
-import brand2 from '../assets/brand-02.webp'
-import brand3 from '../assets/brand-03.webp'
-import brand4 from '../assets/brand-04.webp'
-import brand5 from '../assets/brand-05.webp'
-import brand6 from '../assets/brand-06.webp'
+import brand1 from '../assets/iphone.png'
+import brand2 from '../assets/samsung.png'
+import brand3 from '../assets/motorola.png'
+import brand4 from '../assets/realme.png'
+import brand5 from '../assets/oppo.png'
+import brand6 from '../assets/xiaome.png'
 import brand7 from '../assets/brand-07.webp'
 import brand8 from '../assets/brand-08.webp'
 import brand9 from '../assets/brand-09.webp'
@@ -64,7 +65,7 @@ function Index() {
     };
 
     const handleWhatsApp = () => {
-        const phoneNumber = "55982265217"; // coloque seu número aqui
+        const phoneNumber = "5598507-2644"; // coloque seu número aqui
         const message = `🚗 *Nova solicitação de reserva:*
 • Tipo de carro: ${carType || "Não selecionado"}
 • Retirada: ${pickUpLocation || "Não informado"}
@@ -680,15 +681,19 @@ function Index() {
             {/* car */}
             <div className='car lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]'>
                 <div className="car-categories-content text-start mb-10 lg:mb-14">
-                    <p className="uppercase text-sm tracking-[5px] mb-2 text-[#e8021f]">- Categorias de Carros</p>
+                    <p className="uppercase text-sm tracking-[5px] mb-2 text-[#43d6d2]">
+                        - Nossos Produtos
+                    </p>
                     <h2 className="text-4xl md:text-5xl font-bold mb-3 text-white font-bricolage ">
-                        Escolha o Carro Ideal para Sua Viagem
+                        Escolha o Produto Ideal
                     </h2>
                 </div>
+
                 <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5'>
                     {cardata.map((car) => (
                         <div key={car.id} className="car-item group bg-[#1e1f22] relative w-full">
-                            {/* Imagem do Carro */}
+
+                            {/* IMAGEM (INTACTA) */}
                             <div className="car-image w-full relative h-[250px] overflow-hidden">
                                 <img
                                     src={car.image}
@@ -699,50 +704,39 @@ function Index() {
                                     <h4 className='text-2xl md:text-3xl font-bricolage text-white font-semibold'>
                                         {car.name}
                                     </h4>
-                                    <span className='text-red-100 font-bricolage text-xl'>{car.type}</span>
+                                    <span className='text-[#43d6d2] font-bricolage text-lg'>
+                                        {car.category}
+                                    </span>
                                 </div>
                             </div>
 
-                            <div className="car-content p-5 py-10 relative">
-                                <ul className='flex gap-3 justify-between items-center flex-wrap'>
-                                    <li className='text-gray-300 text-lg md:text-xl'>
-                                        <i className="fa-regular fa-user text-[#e8021f] pe-2"></i>
-                                        {car.seats} lugares
-                                    </li>
-                                    <li className='text-gray-300 text-lg md:text-xl'>
-                                        <i className="ri-steering-line text-[#e8021f] pe-2"></i>
-                                        {car.transmission === "Automatic" ? "Automático" : "Manual"}
-                                    </li>
-                                    <li className='text-gray-300 text-lg md:text-xl'>
-                                        <i className="ri-timer-line text-[#e8021f] pe-2"></i>
-                                        {car.speed} km/h
-                                    </li>
-                                </ul>
+                            {/* CONTEÚDO (SEM LISTA) */}
+                            <div className="car-content p-5 py-8 relative">
 
-                                {/* Preço + Botão */}
-                                <div className='flex justify-between items-center mt-12'>
-                                    <h4 className='text-2xl md:text-4xl font-bold font-bricolage text-white'>
-                                        R$ {car.price}/dia
+                                <div className='flex justify-between items-center mt-2'>
+                                    <h4 className='text-xl md:text-2xl font-bold font-bricolage text-white'>
+                                        R$ {car.price}
                                     </h4>
+
                                     <Link to={`/car/${car.id}`}>
-                                        <button className='text-white bg-red-600 px-5 py-3 text-lg md:text-xl rounded-full cursor-pointer'>
-                                            Reservar
+                                        <button className='text-white bg-[#e8021f] px-4 py-2 text-base md:text-lg rounded-full cursor-pointer hover:bg-white hover:text-black transition-all'>
+                                            Ver
                                         </button>
                                     </Link>
                                 </div>
+
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
 
-
             {/* Testimonials */}
             <div className="our-service lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]">
                 <div className="our-service-content mb-20 text-center text-white">
-                    <p className="uppercase text-sm tracking-[5px] text-[#e8021f] mb-2">- Depoimentos</p>
+                    <p className="uppercase text-sm tracking-[5px] text-[#43d6d2] mb-2">- Depoimentos</p>
                     <h2 className="text-4xl md:text-5xl font-bold mb-3 text-white font-bricolage ">
-                        Confiado por milhares <span className="text-[#e8021f] font-bricolage"> da Ridelux.</span>
+                        Clientes que já <span className="text-[#43d6d2] font-bricolage"> confiaram no meu trabalho</span>
                     </h2>
                 </div>
 
@@ -758,6 +752,7 @@ function Index() {
                         1440: { slidesPerView: 3 },
                     }}
                 >
+
                     {/* Slide 1 */}
                     <SwiperSlide>
                         <div className="rounded-[30px] bg-[#222] text-left p-8 shadow-md h-full flex flex-col justify-between">
@@ -769,9 +764,11 @@ function Index() {
                                     ))}
                                 </div>
                             </div>
+
                             <div className="text-white text-lg mb-6 font-bricolage">
-                                A opção de motorista tornou nossa viagem de negócios livre de estresse. Recomendo fortemente os serviços premium.
+                                Troquei a tela do meu celular e ficou perfeita, parecia novo. Atendimento rápido e preço justo.
                             </div>
+
                             <div className="flex items-center mt-6">
                                 <div className="curv">
                                     <div className="service-item-curv section-item-curv bg-transparent test-cruve">
@@ -779,8 +776,8 @@ function Index() {
                                     </div>
                                 </div>
                                 <div className="ps-[100px]">
-                                    <p className="font-semibold text-xl font-bricolage text-[#e8021f]">Aaron P</p>
-                                    <p className="text-[#999] text-sm font-bricolage">Cliente Corporativo</p>
+                                    <p className="font-semibold text-xl font-bricolage text-[#43d6d2]">Carlos M.</p>
+                                    <p className="text-[#999] text-sm font-bricolage">Cliente</p>
                                 </div>
                             </div>
                         </div>
@@ -797,9 +794,11 @@ function Index() {
                                     ))}
                                 </div>
                             </div>
+
                             <div className="text-white text-lg mb-6 font-bricolage">
-                                Precisávamos de uma van para uma viagem de fim de semana, e a GetnGo entregou no horário com excelente suporte.
+                                Comprei um fone Bluetooth e a qualidade é muito boa pelo preço. Recomendo demais.
                             </div>
+
                             <div className="flex items-center mt-6">
                                 <div className="curv">
                                     <div className="service-item-curv section-item-curv bg-transparent test-cruve">
@@ -807,8 +806,8 @@ function Index() {
                                     </div>
                                 </div>
                                 <div className="ps-[100px]">
-                                    <p className="font-semibold text-xl font-bricolage text-[#e8021f]">Emily W</p>
-                                    <p className="text-[#999] text-sm font-bricolage">Viagem em Família</p>
+                                    <p className="font-semibold text-xl font-bricolage text-[#43d6d2]">Ana S.</p>
+                                    <p className="text-[#999] text-sm font-bricolage">Cliente</p>
                                 </div>
                             </div>
                         </div>
@@ -825,9 +824,11 @@ function Index() {
                                     ))}
                                 </div>
                             </div>
+
                             <div className="text-white text-lg mb-6 font-bricolage">
-                                Ótimos carros, equipe amigável e assistência 24/7 me fizeram sentir seguro durante toda a viagem.
+                                Formatei meu computador e ficou muito mais rápido. Serviço top e confiável.
                             </div>
+
                             <div className="flex items-center mt-6">
                                 <div className="curv">
                                     <div className="service-item-curv section-item-curv bg-transparent test-cruve">
@@ -835,8 +836,8 @@ function Index() {
                                     </div>
                                 </div>
                                 <div className="ps-[100px]">
-                                    <p className="font-semibold text-xl font-bricolage text-[#e8021f]">Kevin M</p>
-                                    <p className="text-[#999] text-sm font-bricolage">Entusiasta de Road Trips</p>
+                                    <p className="font-semibold text-xl font-bricolage text-[#43d6d2]">João P.</p>
+                                    <p className="text-[#999] text-sm font-bricolage">Cliente</p>
                                 </div>
                             </div>
                         </div>
@@ -853,9 +854,11 @@ function Index() {
                                     ))}
                                 </div>
                             </div>
+
                             <div className="text-white text-lg mb-6 font-bricolage">
-                                Adorei como o processo de reserva foi simples. Em minutos, meu aluguel estava confirmado e pronto para uso.
+                                Transferiu todos meus dados para outro celular sem perder nada. Muito prático!
                             </div>
+
                             <div className="flex items-center mt-6">
                                 <div className="curv">
                                     <div className="service-item-curv section-item-curv bg-transparent test-cruve">
@@ -863,28 +866,32 @@ function Index() {
                                     </div>
                                 </div>
                                 <div className="ps-[100px]">
-                                    <p className="font-semibold text-xl font-bricolage text-[#e8021f]">Jessica L</p>
-                                    <p className="text-[#999] text-sm font-bricolage">Viajante Frequente</p>
+                                    <p className="font-semibold text-xl font-bricolage text-[#43d6d2]">Mariana R.</p>
+                                    <p className="text-[#999] text-sm font-bricolage">Cliente</p>
                                 </div>
                             </div>
                         </div>
                     </SwiperSlide>
+
                 </Swiper>
             </div>
 
-
-            {/* Our Blog */}
+            {/* Dicas / Serviços */}
             <div className="our-blog lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]">
                 <div className="our-blog-content mb-20 text-center text-white">
-                    <p className="uppercase text-sm tracking-[5px] text-[#e8021f] mb-2">- Nosso Blog</p>
+                    <p className="uppercase text-sm tracking-[5px] text-[#43d6d2] mb-2">
+                        - Dicas e Serviços
+                    </p>
                     <h2 className="text-4xl md:text-5xl font-bold mb-3 text-white font-bricolage ">
-                        Últimas <span className="text-[#e8021f] font-bricolage">Notícias</span>
+                        Cuidados e <span className="text-[#43d6d2] font-bricolage">Soluções</span>
                     </h2>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                     {blogdata.slice(0, 3).map((blog) => (
                         <div key={blog.id} className="blog-item bg-[#1e1f22] group">
+
+                            {/* IMAGEM (NÃO ALTEREI) */}
                             <div className="blog-image overflow-hidden">
                                 <img
                                     src={blog.image}
@@ -892,13 +899,19 @@ function Index() {
                                     className="group-hover:scale-110 transition-all duration-300 w-full h-[250px] object-cover"
                                 />
                             </div>
+
                             <div className="blog-content p-5 py-8">
-                                <div className="date bg-red-600 w-fit px-4 py-0.5 text-md text-white font-bricolage rounded-md mb-3">
-                                    {blog.date}
+
+                                {/* TAG */}
+                                <div className="bg-[#e8021f] w-fit px-4 py-1 text-sm text-white font-bricolage rounded-md mb-3">
+                                    {blog.category}
                                 </div>
-                                <h4 className="text-lg lg:text-2xl font-bricolage text-white font-semibold uppercase">
+
+                                {/* TÍTULO */}
+                                <h4 className="text-lg lg:text-2xl font-bricolage text-white font-semibold">
                                     {blog.name}
                                 </h4>
+
                             </div>
                         </div>
                     ))}
