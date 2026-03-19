@@ -306,8 +306,6 @@ function Index() {
                 </div>
             </div>
 
-
-
             {/* Banner */}
             <div className="banner lg:px-[12%] px-[8%] py-[50px] lg:py-[90px]">
                 <div className="banner-content text-center">
