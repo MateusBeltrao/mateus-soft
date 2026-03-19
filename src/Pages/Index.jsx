@@ -38,7 +38,6 @@ import brand14 from '../assets/brand-14.webp'
 
 import cardata from '../Cars.json'
 
-
 import { Link } from 'react-router-dom';
 
 function Index() {
