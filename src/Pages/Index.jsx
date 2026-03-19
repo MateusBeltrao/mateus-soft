@@ -26,7 +26,7 @@ import brand1 from '../assets/iphone.png'
 import brand3 from '../assets/motorola.png'
 import brand4 from '../assets/realme.png'
 import brand5 from '../assets/oppo.png'
-import brand2 from '../assets/samsung.png'
+import brand2 from '../assets/lixo.png'
 import brand6 from '../assets/xiaome.png'
 import brand7 from '../assets/brand-07.webp'
 import brand8 from '../assets/brand-08.webp'
@@ -53,7 +53,7 @@ function Index() {
     const returnPickerRef = useRef(null);
 
 
-    
+
     const openCalendar = () => {
         if (datePickerRef.current) {
             datePickerRef.current.setFocus();
